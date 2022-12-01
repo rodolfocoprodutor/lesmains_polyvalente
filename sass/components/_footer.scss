@@ -1,0 +1,63 @@
+@use '../global/variables';
+@use '../global/boilerplate';
+
+.disclaimer {
+    text-align: center;
+    padding: 5rem 0;
+    background-color: var(--clr-prussianblue-100);
+    color: var(--clr-neutral-50);
+
+    a {
+        color: var(--neutral-50);
+    }
+
+    .container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h4 {
+            font-size: var(--subtitle-h4);
+            font-weight: 600;
+        }
+
+        .logo {
+            max-height: 6rem;
+            margin-inline: auto;
+            margin-bottom: 3.2rem;
+        }
+        .cnpj {
+            font-size: var(--subtitle-h4);
+            font-weight: var(--semibold);
+        }
+
+        address{
+            font-style: normal;
+
+        }
+        .menu {
+            justify-content: center;
+            text-decoration: underline;
+            margin-block: 3.2rem;
+            
+            li {
+                font-weight: var(--semibold);
+
+                .link {
+                    color: #fff;
+
+                }
+            }
+        }
+        .copyright {
+            border-top: 1px solid rgba(126, 156, 199, 0.2);
+            padding-top: 2.4rem;
+        }
+
+        .menu_social{
+            margin-top: 2.4rem;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}

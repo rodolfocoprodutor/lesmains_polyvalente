@@ -1,0 +1,12 @@
+@use '../global/variables';
+
+.card {
+    position: relative;
+    max-width: 100%;
+    min-width: 32rem;
+    flex: 1 1 0;
+    padding: 3.2rem 1.6rem;
+    border-radius: 1.6rem;
+    text-align: left;
+
+}

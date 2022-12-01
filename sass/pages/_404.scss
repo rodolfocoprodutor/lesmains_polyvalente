@@ -1,0 +1,18 @@
+.s-404 {
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    place-content: center;
+
+    .container {
+        width: 90%;
+
+        h2 {
+            font-size: clamp(8rem, 15vw, 20rem);
+        }
+
+        button {
+            margin-top: 4rem;
+        }
+    }
+}

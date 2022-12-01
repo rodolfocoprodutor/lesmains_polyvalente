@@ -1,0 +1,21 @@
+.s-obrigado {
+
+    .container {
+        grid-template-columns: repeat(auto-fit, minmax(min(100%, 32rem), auto)) ;
+        row-gap: 6.4rem;
+        justify-content: space-between;
+        align-items: center;
+
+        .obrigado_content_info {
+            max-width: 72.8rem;
+        }
+
+        .obrigado_content_image {
+            position: relative;
+            margin-inline: auto;
+            img {
+                object-fit: contain;
+            }
+        }
+    }
+}

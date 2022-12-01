@@ -1,0 +1,96 @@
+.s-banner_hero {
+    background-image: url("../../assets/polyvalente/bg_banner-hero.png");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-color: var(--clr-prussianblue-100);
+    background-size: cover;
+
+    color: #fff;
+    
+    padding-top: 7.2rem;
+    padding-bottom: 7.2rem;
+
+    height: auto;
+    .container {
+        gap: 0;
+    }
+    .left {
+        width: 100%;
+        max-width: 51.8rem;
+
+        .chamada {
+            text-transform: uppercase;
+            font-size: var(--details);
+            font-weight: var(--bold);
+        }
+        .display {
+            margin-bottom: 3.2rem;
+        }
+        .title {
+            color: var(--clr-lochmara-500);
+            text-align: left;
+        }
+        .subtitle {
+            font-size: var(--subtitle-h4);
+            font-weight: 500;
+        }
+        button {
+            margin-top: 2.4rem;
+        }
+        .info {
+            flex-direction: row;
+            flex-wrap: nowrap;
+            align-items: end;
+
+            img {
+                visibility: hidden;
+                display: none;
+            }
+        }
+    }
+    .right {
+        width: 100%;
+        max-width: 54.8rem;
+
+        .info {
+            flex-direction: row;
+            flex-wrap: nowrap;
+            align-items: end;
+            margin-bottom: 5.6rem;
+
+            img {
+                width: 20vmax;
+            }
+        }
+        .list {
+
+            &::before {
+                content: '\2726';
+                display: inline-block;
+                margin-right: .8rem;
+                vertical-align: middle;
+                font-size: 1.5em;
+            }
+        }
+    }
+
+    @media (max-width: 50rem) {
+        height: auto;
+        padding-top: 6.4rem;
+        padding-bottom: 5.6rem;
+        background-image: url("../../assets/polyvalente/bg_banner-hero-m.png");
+        background-position: bottom center;
+        background-size: contain;
+
+        position: relative;
+        overflow: hidden;
+        .btn_cta {
+            position: absolute;
+            bottom: 0;
+            box-shadow: none;
+            border-radius: 0;
+            width: 90%;
+        }
+
+    }
+}

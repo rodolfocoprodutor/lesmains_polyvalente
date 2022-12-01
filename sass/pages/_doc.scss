@@ -1,0 +1,29 @@
+h3 {
+    margin-top: 2.4rem;
+}
+p {
+    margin-top: 1.6rem;
+    line-height: 1.5;
+}
+
+.inst-footer {
+    background-color: var(--clr-blueopal-500);
+    padding-top: 0;
+    text-align: center;
+    color: white;
+
+    .inst-s-footer {
+        padding: 3.2rem 0;
+
+        .inst-menu {
+            justify-content: center;
+            margin-top: 2.4rem;
+            gap: 2.4rem;
+
+            a {
+             color: var(--clr-forsythia-500);
+             font-weight: 600;
+            }            
+        }
+    }
+}

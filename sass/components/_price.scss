@@ -1,0 +1,76 @@
+@use 'card' as *;
+
+.content_price_table {
+    justify-content: center;
+    align-items: center;
+
+    .price_table_image {
+         flex-wrap: nowrap;
+         gap: 0;
+         border: solid 1px var(--clr-neutral-100);
+         border-radius: 1.6rem;
+         overflow: hidden;
+         max-width: max-content;
+         
+         .price_title {
+            text-align: center;
+            h3 {
+                background-color: var(--clr-blueopal-500);
+                padding: 1.6rem;
+                height: 8rem;
+                color: var(--clr-neutral-50);
+                font-size: var(--subtitle-h4);
+                span {
+                    font-weight: 400;
+                    font-size: 1.2rem;
+                }
+            }
+            img {
+                max-width: 80%;
+                object-fit: contain;
+                margin-inline: auto;
+                max-height: auto;
+                padding-top: 1.6rem;
+
+            }
+            
+         }
+         .price_desc {
+            text-align: center;
+    
+            h3 {
+                background-color: var(--clr-forsythia-500);
+                padding: 1.6rem;
+                height: 8rem;
+                color: var(--clr-blueopal-500);
+                font-size: var(--subtitle-h4);
+                line-height: 2;
+            }
+            
+            p {
+                font-size: 1.4rem;
+            }
+            .s_desc {
+                font-weight: 400;
+                font-size: 1.4rem;
+                background-color: var(--clr-forsythia-300);
+                padding: .8rem 0;
+            }
+    
+            .price {
+                padding: .8rem;
+                span {
+                    font-size: var(--title);
+                    font-weight: 800;
+                }
+            }
+            button {
+                margin-top: 1.6rem;
+                margin-bottom: 2.4rem;
+
+            }
+    
+         }
+    
+    }
+}

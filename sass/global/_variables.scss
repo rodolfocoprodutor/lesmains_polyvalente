@@ -1,0 +1,43 @@
+@use 'colors' as *;
+
+:root{
+    @each $color, $shades in $colors {
+        @each $shade, $value in $shades {
+            --clr-#{$color}-#{$shade}: #{$value};
+        }
+    }
+
+    // Font Family
+    --body-font: 'Mulish', sans-serif;
+    --title-font: 'Caudex', serif;
+
+    // Font size
+    --display: 6.4rem;
+    --title: 3.815rem;
+    --subtitle: 3.052rem;
+    --subtitle-h4: 2.441rem;
+    --paragraph: 1.8rem;
+    --details: 1.563rem;
+    --smallest: 1.25rem;
+
+    // Font style
+    --regular: 400;
+    --medium: 500;
+    --semibold: 600;
+    --bold: 700;
+    --extrabold: 800;
+    --black: 900;
+}
+
+/* Responsive typography */
+@media only screen and (orientation: portrait)  {
+    :root {
+        --display: 4.8rem;
+        --title: 3.052rem;
+        --subtitle: 2.441rem;
+        --subtitle-h4: 1.953rem;
+        --paragraph: 1.6rem;
+        --details: 1.25rem;
+        --smallest: 1rem;
+    }
+}

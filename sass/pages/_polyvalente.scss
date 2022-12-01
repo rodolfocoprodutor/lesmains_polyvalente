@@ -1,0 +1,217 @@
+.s-sonho {
+    .title {
+        @extend .title;
+        color: var(--clr-prussianblue-100);
+        margin-bottom: 5.6rem;
+    }
+    .sonhos_items {
+        justify-content: space-evenly;
+
+        .sonho_item {
+            width: 100%;
+            max-width: 28.8rem;
+            height: auto;
+        }
+        .sonho_thumbnail {
+            margin-bottom: 3.2rem;
+        }
+        .subtitle {
+            text-align: center;
+            font-size: var(--subtitle-h4);
+    
+            span{
+                color: var(--clr-coopered-500);
+            }
+        }
+    }
+    p {
+        margin-top: 7.2rem;
+        max-width: 100.8rem;
+        text-align: center;
+        font-size: 2rem;
+        margin-inline: auto;
+    }
+}
+
+.s-invista {
+    background-color: var(--clr-prussianblue-100);
+    color: #fff;
+
+    .title{
+        @extend .title;
+        margin-bottom: 5.6rem;
+    }
+    .content {
+        justify-content: space-between;
+        row-gap: 7.2rem;
+
+        .left {
+            max-width: 59.2rem;
+
+            .invista_boldas {
+                gap: 2.4rem;
+                
+                h4 {
+                    margin-bottom: 1.6rem;
+                    font-weight: 600;
+                }
+            }
+        }
+
+        .right {
+            max-width: 48.8rem;
+
+            li {
+                margin-bottom: 4rem;
+
+                h4 {
+                    margin-bottom: 1.6rem;
+                    font-weight: 600;
+                }
+                p {
+                    line-height: 1.8;
+                }
+            }
+        }
+    }
+}
+
+.s-detalhes {
+    .title {
+        @extend .title;
+        margin-bottom: 5.6rem;
+    }
+}
+.s-depoimentos {
+
+    .title {
+        margin-bottom: 5.6rem;
+    }
+    .content_depoimentos {
+        display: flex;
+        scroll-snap-type: x mandatory;
+        scroll-padding: 2.5rem;
+        column-gap: 2rem;
+        overflow-x: auto;
+
+        .depoimento {
+            min-width: 28rem;
+            max-width: 38.4rem;
+            max-height: 54.4rem;
+            flex: 0 0 100%;
+            padding: 3rem;
+            scroll-snap-align: start;
+            border-radius: 1.6rem;
+            
+            background-image: url(../../assets/polyvalente/bg-depoimento.svg);
+            background-position: top right;
+            background-repeat: no-repeat;
+
+        }
+    }
+}
+
+.s-brinde {
+
+    .title {
+        margin-bottom: 4rem;
+    }
+    .banner_eco {
+        margin-inline: auto;
+    }
+}
+
+.s-offer {
+    .subtitle {
+        text-align: center;
+        margin-bottom: 4rem;
+    }
+
+    .content {
+        justify-content: space-around;
+        
+        .left {
+            
+            .item {
+                max-width: 41.6rem;
+                padding: 3.2rem 1.6rem;
+                border-radius: 1.6rem;
+                background-color: var(--clr-coopered-100);
+                .cover {
+                    margin-bottom: 3.2rem;
+                }
+
+                .products_list {
+                    margin-bottom: 2.4rem;
+
+                    .list {
+                        line-height: 1.5;
+
+                        &::before {
+                            content: '\2726';
+                            display: inline-block;
+                            margin-right: .8rem;
+                            vertical-align: middle;
+                            font-size: 1.5em;
+                            color: var(--clr-coopered-500);
+                        }
+                    }
+                }
+
+                .old_price {
+                    display: block;
+                    text-align: center;
+                    margin-bottom: .8rem;
+                    font-size: var(--subtitle-h4);
+                }
+                .portion {
+
+                    @extend .old_price;
+                    font-weight: var(--bold);
+                    .price{
+                        font-size: var(--title);
+                        font-weight: var(--black)
+                    }
+                }
+
+                .full_price {
+                    @extend .old_price;
+                    font-size: var(--paragraph);
+                }
+
+                .btn-cta {
+                    position: relative;
+                    margin-top: 3.2rem;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+            }
+        }
+        .right {
+            @extend .left;
+        }
+    }
+}
+
+.s-garantia {
+    background-color: var(--clr-coopered-500);
+    text-align: center;
+    color: #fff;
+
+    .title,
+    .subtitle {
+        text-transform: uppercase;
+        margin-bottom: 5.6rem;
+    }
+    
+    .subtitle {
+        font-size: var(--subtitle-h4);
+        line-height: 1.5;
+    }
+
+    .selo {
+        margin-inline: auto;
+        margin-bottom: 3.2rem;
+    }
+
+}

@@ -1,0 +1,49 @@
+.popup {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(100%);
+    transition: 0.3s;
+    z-index: 999;
+
+    img {
+        border-radius: .8rem;
+    }
+}
+.popup-int {
+    width: 512px;
+    max-width: 100%;
+    height: auto;
+    min-height: 300px;
+    background: transparent;
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    position: absolute;
+    transform: translateY(20%);
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+}
+.fechar {
+    position: absolute;
+    top: -50px;
+    right: 0px;
+    cursor: pointer;
+    background-color: red;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-weight: 600;
+}
+.show {
+    transform: translateY(0);
+}
+.show-int {
+    transform: translateY(0);
+    transition: .6s ease-out;
+}
